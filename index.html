@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Star-Wars-Game</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+	
+	<header class="container text-right">
+		<h1>Star-Wars-RPG!</h1>
+	</header>
+	<br>
+	<br>
+	<div class= "container">
+		<div class="row">
+			<div class="col-md-8">
+				<div id="player-buttons">
+					
+					<div id="yoda">
+						<div>Yoda</div>
+						<img  src="assets/images/yoda.jpg" style="height: 110px; width: 150px; border: 2px solid green">
+						<div>hp: <span>?</span></div>
+						
+
+					</div>
+					<div id="darth">
+						<div>Vader</div>
+						<img  src="assets/images/Vader.jpg " style="height: 110px; width: 150px; border: 2px solid green" >
+						<div>hp: <span>?</span></div>
+						
+					</div>
+					<div id="obi">
+						<div>Obi-Wan</div>
+						<img  src="assets/images/obi.jpg" style="height: 110px; width: 150px; border: 2px solid green">
+						<div>hp: <span>?</span></div>
+						
+					</div>
+					<div  id="maul">
+						<div>Maul</div>
+						<img  id="maul" src="assets/images/maul.jpg" style="height: 110px; width: 150px; border: 2px solid green">
+						<div>hp: <span>?</span></div>
+						
+					</div>
+				</div>
+				<div id="hp"></div>
+				<div id="name"></div>
+			</div>
+		</div>
+		<div class= "row">	
+			<div class="col-md-12">
+				<h4>Your Character</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 container">
+				<div id="enemy" style="height:120px;"></div>
+				<h4 id="enemy-buttons">
+					Enemies Available to Attack 
+				</h4>
+				<h4>Fight-section</h4>
+				
+			</div>
+		</div>
+		<button id="attack">Attack</button>
+		<div id="defender">
+			<h4>Defender</h4>
+		</div> 
+		<div id="defender" style="height: 140px;"></div>
+
+	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <script type="text/javascript" >
+
+	 	$(document).ready(function() {
+	 		// var charOne;
+	 		var players = ["Yoda", "Darth-Vader", "Obi-Wan", "Darth-maul"];
+	 		var images = ["assets/images/yoda.jpg", "assets/images/Vader.jpg" , "assets/images/obi.jpg", "assets/images/maul.jpg"];
+	 		var yourCharacter;
+	 		var char1;
+	 		var enemyCharacter;
+	 		var defender;
+	 		
+	 	// for (var i = 0; i < players.length; i++) {
+
+	 	// 	var yourCharacter = $("<img>");
+
+	 	// 	yourCharacter.addClass("players ");
+
+	 	// 	yourCharacter.attr('src', images[i]);
+
+	 	// 	yourCharacter.text("data-name" , players[i]);
+	 		
+	 	// 	$("#player-buttons").append(yourCharacter);
+
+	 	// 	$("#player-buttons").on("click", function(){
+
+
+	 	// 	})
+
+	 	
+
+	 		// $(".players").on("click", function(){
+
+	 		// 	$("#player-buttons")appendTo("#enemy");
+	 	
+
+	 		
+	 		// $("#yoda").on("click" , function(){
+	 			
+	 		// 	yourCharacter = $("<div>")
+
+	 		// 	 $("#enemy-buttons").append(yourCharacter);
+	 		
+	 	});
+	 </script>
+</body>
+</html>

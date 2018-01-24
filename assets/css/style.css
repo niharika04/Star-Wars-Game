@@ -1,0 +1,35 @@
+header {
+	font-family: 'Star Jedi';
+	font-size: 40px;
+
+}
+
+#player-buttons {
+	
+	justify-content: space-around;
+	align-items: center;
+	height: 250px;
+	width: 720px;
+	
+	display: flex;
+	text-align: center;
+	}
+
+#player-buttons>div {
+	border: 1px solid green;
+	padding: 15px;
+}
+
+
+h5 {
+	
+	bottom: 1px;
+	margin-left: 55px;
+	text-align: center;
+}
+
+
+		
+			
+
+
